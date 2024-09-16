@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+header, footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+h1 {
+    color: white;
+}
+h2, h3 {
+    color: #333;
+}
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+nav a:hover {
+    background-color: #555;
+    color: #f4f4f4;
+}
+.index-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+}
+.index {
+    flex: 1;
+    max-width: 30%;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+}
+.index img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+figure {
+    margin: 20px 0;
+    text-align: center;
+}
+figure img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-style: italic;
+}
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    max-width: 500px;
+    margin: 20px auto;
+}
+form label {
+    display: block;
+    margin-bottom: 8px;
+}
+form input[type="text"],
+form input[type="email"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+form input[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+form input[type="submit"]:hover {
+    background-color: #555;
+}
+footer p {
+    margin: 5px 0;
+}
+@media (max-width: 768px) {
+    .index {
+        max-width: 45%;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 0;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width: 480px) {
+    .index {
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    form {
+        padding: 15px;
+    }
+}
