@@ -4,44 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phones | TechMarket</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet" />
 </head>
 <body>
-
 <header>
-    <h1>Explore Our iPhone Collection</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="phone.html">Phone</a>
-        <a href="laptop.html">Laptop</a>
-        <a href="headphones.html">Headphones</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">TechMarket</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="phone.html">Phone</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="laptop.html">Laptop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="headphones.html">Headphones</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 </header>
+<main class="container mt-5">
+    <h1 class="text-center mb-4">Explore Our iPhone Collection</h1>
+    <section class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100 text-center">
+                <img src="iphone15.png" class="card-img-top" alt="iPhone 15">
+                <div class="card-body">
+                    <h3 class="card-title">iPhone 15</h3>
+                    <p class="card-text">Sleek design, powerful A16 chip, and impressive camera system.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100 text-center">
+                <img src="iphone15pro.png" class="card-img-top" alt="iPhone 15 Pro">
+                <div class="card-body">
+                    <h3 class="card-title">iPhone 15 Pro</h3>
+                    <p class="card-text">Advanced cameras, titanium frame, and the new A17 Pro chip.</p>
+                </div>
+            </div>
+        </div>
 
-<main>
-    <section class="item-section">
-        <div class="phone">
-            <img src="iphone15.png" alt="iphone15" width="300" height="300">
-            <h3>iPhone 15</h3>
-            <p>Sleek design, powerful A16 chip, and impressive camera system.</p>
-        </div>
-        <div class="phone">
-            <img src="iphone15pro.png" alt="iphone15pro" width="300" height="300">
-            <h3>iPhone 15 Pro</h3>
-            <p>Advanced cameras, titanium frame, and the new A17 Pro chip.</p>
-        </div>
-        <div class="phone">
-            <img src="iphone15promax.jpg" alt="iphone15promax" width="300" height="300">
-            <h3>iPhone 15 Pro Max</h3>
-            <p>Larger display, enhanced zoom, and exceptional battery life.</p>
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100 text-center">
+                <img src="iphone15promax.jpg" class="card-img-top" alt="iPhone 15 Pro Max">
+                <div class="card-body">
+                    <h3 class="card-title">iPhone 15 Pro Max</h3>
+                    <p class="card-text">Larger display, enhanced zoom, and exceptional battery life.</p>
+                </div>
+            </div>
         </div>
     </section>
 </main>
-
-<footer>
+<footer class="text-center bg-light py-3 mt-5">
     <p>&copy; 2024 TechMarket. All rights reserved.</p>
     <p>Created by Amantay Sanzhar and Sultanov Daiyar</p>
 </footer>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

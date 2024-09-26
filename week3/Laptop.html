@@ -4,44 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laptops | TechMarket</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet" />
 </head>
 <body>
-
 <header>
-    <h1>Explore Our Laptop Collection</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="phone.html">Phone</a>
-        <a href="laptop.html">Laptop</a>
-        <a href="headphones.html">Headphones</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">TechMarket</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="phone.html">Phone</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="laptop.html">Laptop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="headphones.html">Headphones</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 </header>
+<main class="container mt-5">
+    <h1 class="text-center mb-4">Explore Our Laptop Collection</h1>
+    <section class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100 text-center">
+                <img src="MacBook Air M2.png" class="card-img-top" alt="MacBook Air M2">
+                <div class="card-body">
+                    <h3 class="card-title">MacBook Air M2</h3>
+                    <p class="card-text">Lightweight, powerful, and designed for seamless performance.</p>
+                </div>
+            </div>
+        </div>
 
-<main>
-    <section class="item-section">
-        <div class="laptop">
-            <img src="MacBook Air M2.png" alt="MacBook Air M2" width="300" height="200">
-            <h3>MacBook Air M2</h3>
-            <p>Lightweight, powerful, and designed for seamless performance.</p>
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100 text-center">
+                <img src="MacBook Pro 14.png" class="card-img-top" alt="MacBook Pro 14">
+                <div class="card-body">
+                    <h3 class="card-title">MacBook Pro 14"</h3>
+                    <p class="card-text">High-end performance, stunning display, and pro-level capabilities.</p>
+                </div>
+            </div>
         </div>
-        <div class="laptop">
-            <img src="MacBook Pro 14.png" alt="MacBook Pro 14" width="300" height="200">
-            <h3>MacBook Pro 14"</h3>
-            <p>High-end performance, stunning display, and pro-level capabilities.</p>
-        </div>
-        <div class="laptop">
-            <img src="Asus Vivobook.png" alt="Asus Vivobook" width="300" height="200">
-            <h3>Asus Vivobook</h3>
-            <p>Ultra-thin design, exceptional display, and powerful performance.</p>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100 text-center">
+                <img src="Asus Vivobook.png" class="card-img-top" alt="Asus Vivobook">
+                <div class="card-body">
+                    <h3 class="card-title">Asus Vivobook</h3>
+                    <p class="card-text">Ultra-thin design, exceptional display, and powerful performance.</p>
+                </div>
+            </div>
         </div>
     </section>
 </main>
-
-<footer>
+<footer class="text-center bg-light py-3 mt-5">
     <p>&copy; 2024 TechMarket. All rights reserved.</p>
     <p>Created by Amantay Sanzhar and Sultanov Daiyar</p>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

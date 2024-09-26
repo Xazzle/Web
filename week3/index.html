@@ -4,82 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechMarket</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="index.css" rel="stylesheet" />
 </head>
 <body>
-
     <header>
-    <h1>Welcome to TechMarket   </h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="phone.html">Phone</a>
-        <a href="laptop.html">Laptop</a>
-        <a href="headphones.html">Headphones</a>
-    </nav>
-</header>
-    <main>
-        <section id="home">
-            <h2>Home Section</h2>
-            <p>Welcome to homepage of our website</p>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">TechMarket</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="phone.html">Phone</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="laptop.html">Laptop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="headphones.html">Headphones</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container mt-5">
+        <section id="home" class="row mb-4">
+            <div class="col-lg-6">
+                <h2>Home Section</h2>
+                <p>Welcome to homepage of our website</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="image1.png" class="img-fluid" alt="Sample Image">
+            </div>
         </section>
-
-        <section id="about">
-            <h2>About Us</h2>
-            <p>TechMarket is your trusted partner in the world of cutting-edge technology. We offer only the best devices and accessories from leading global brands, ensuring high quality and reliability for every product. Our goal is to make innovation accessible to everyone by providing excellent service and support at every step of your journey. Choose TechMarket and explore new possibilities with us!</p>
-            <figure>
-                <img src="image1.png" alt="Sample Image" style="max-width:100%;">
-                <figcaption>Our logo</figcaption>
-            </figure>
+        <section id="about" class="row mb-4">
+            <div class="col-lg-4">
+                <h3>Phone</h3>
+                <p>A mobile device that combines cellular and smartphone functions, allowing for calls, texts, and various applications.</p>
+            </div>
+            <div class="col-lg-4">
+                <h3>Laptop</h3>
+                <p>A portable computer designed for mobile use, equipped with a keyboard, screen, and battery for computing on the go.</p>
+            </div>
+            <div class="col-lg-4">
+                <h3>Headphones</h3>
+                <p>Audio devices worn on or over the ears to listen to sound without disturbing others, available in various styles and types.</p>
+            </div>
         </section>
-
-        <section id="services">
-            <h2>Our slogan</h2>
-            <blockquote >
-                "TechMarket — Where Innovation Meets Your Needs"
-            </blockquote>
-            <h3>Our market:</h3>
-            <ol>
-                <li>Phone</li>
-                <li>Laptop</li>
-                <li>Headphones</li>
-            </ol>
-            <h3>Definitions:</h3>
-            <dl>
-                <dt>Phone</dt>
-                <dd>A mobile device that combines cellular and smartphone functions, allowing for calls, texts, and various applications.</dd>
-                <dt>Laptop</dt>
-                <dd>A portable computer designed for mobile use, equipped with a keyboard, screen, and battery for computing on the go.</dd>
-                <dt>Headphones</dt>
-                <dd>Audio devices worn on or over the ears to listen to sound without disturbing others, available in various styles and types.</dd>
-            </dl>
+        <section id="carouselSection" class="mb-4">
+                <h2>Our Products</h2>
+            <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="iphone15promax.jpg" class="d-block w-100 carousel-img" alt="Phone">
+            </div>
+            <div class="carousel-item">
+                <img src="MacBook Pro 14.png" class="d-block w-100 carousel-img" alt="Laptop">
+            </div>
+            <div class="carousel-item">
+                <img src="AirPodsMax.png" class="d-block w-100 carousel-img" alt="Headphones">
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev"> 
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
         </section>
-
-        <section id="contact">
-            <h2>Your application:</h2>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name"><br><br>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email"><br><br>
-
-                <label for="service">Select a device:</label>
-                <select id="service" name="service">
-                    <option value="web">Phone</option>
-                    <option value="design">Laptop</option>
-                    <option value="seo">Headphones</option>
-                </select><br><br>
-                
-                <label for="message">Your Message:</label><br>
-                <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
-
-                <input type="submit" value="Submit">
+        <section id="contact" class="mt-5">
+            <h2>Contact Us</h2>
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label for="name" class="form-label">Name:</label>
+                    <input type="text" class="form-control" id="name" name="name">
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email">
+                </div>
+                <div class="col-12">
+                    <label for="service" class="form-label">Select a device:</label>
+                    <select class="form-select" id="service" name="service">
+                        <option value="web">Phone</option>
+                        <option value="design">Laptop</option>
+                        <option value="seo">Headphones</option>
+                    </select>
+                </div>
+                <div class="col-12">
+                    <label for="message" class="form-label">Your Message:</label>
+                    <textarea class="form-control" id="message" name="message" rows="4"></textarea>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
             </form>
         </section>
     </main>
-
-    <footer>
+    <footer class="text-center mt-4">
         <p>&copy; 2024 TechMarket. All rights reserved.</p>
         <p>Created by Amantay Sanzhar and Sultanov Daiyar</p>
         <p>Date: September 10, 2024</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

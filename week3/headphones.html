@@ -4,44 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Headphones | TechMarket</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet" />
 </head>
 <body>
-
 <header>
-    <h1>Explore Our Headphones Collection</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="phone.html">Phone</a>
-        <a href="laptop.html">Laptop</a>
-        <a href="headphones.html">Headphones</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">TechMarket</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="phone.html">Phone</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="laptop.html">Laptop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="headphones.html">Headphones</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 </header>
-
-<main>
-    <section class="item-section">
-        <div class="headphone">
-            <img src="sonywh1000xm5.png" alt="sonywh1000xm5" width="300" height="300">
-            <h3>Sony WH-1000XM5</h3>
-            <p>Industry-leading noise cancellation with superior sound quality and comfort.</p>
+<main class="container mt-5">
+    <h1 class="text-center mb-4">Explore Our Headphones Collection</h1>
+    <section class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100 text-center">
+                <img src="sonywh1000xm5.png" class="card-img-top" alt="Sony WH-1000XM5">
+                <div class="card-body">
+                    <h3 class="card-title">Sony WH-1000XM5</h3>
+                    <p class="card-text">Industry-leading noise cancellation with superior sound quality and comfort.</p>
+                </div>
+            </div>
         </div>
-        <div class="headphone">
-            <img src="AirPodsMax.png" alt="AirPodsMax" width="300" height="300">
-            <h3>AirPods Max</h3>
-            <p>Apple's high-fidelity headphones with spatial audio and active noise cancellation.</p>
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100 text-center">
+                <img src="AirPodsMax.png" class="card-img-top" alt="AirPods Max">
+                <div class="card-body">
+                    <h3 class="card-title">AirPods Max</h3>
+                    <p class="card-text">Apple's high-fidelity headphones with spatial audio and active noise cancellation.</p>
+                </div>
+            </div>
         </div>
-        <div class="headphone">
-            <img src="airpodspro2.png" alt="airpodspro2" width="300" height="300">
-            <h3>Air Pods Pro 2nd gen</h3>
-            <p>Balanced sound, exceptional comfort, and best-in-class noise cancellation.</p>
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100 text-center">
+                <img src="airpodspro2.png" class="card-img-top" alt="AirPods Pro 2nd gen">
+                <div class="card-body">
+                    <h3 class="card-title">Air Pods Pro 2nd gen</h3>
+                    <p class="card-text">Balanced sound, exceptional comfort, and best-in-class noise cancellation.</p>
+                </div>
+            </div>
         </div>
     </section>
 </main>
-
-<footer>
+<footer class="text-center bg-light py-3 mt-5">
     <p>&copy; 2024 TechMarket. All rights reserved.</p>
     <p>Created by Amantay Sanzhar and Sultanov Daiyar</p>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
