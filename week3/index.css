@@ -1,8 +1,8 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 20px;
-    background-color: #f4f4f4;
 }
 header, footer {
     background-color: #333;
@@ -13,21 +13,24 @@ header, footer {
 h1 {
     color: white;
     text-align: left;
+    font-size: 2.5rem;
 }
 h2, h3 {
     color: #333;
 }
-p{
-    font-size: 25px;
+p {
+    font-size: 1.25rem;
 }
-nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
+.navbar {
+    background-color: #333;
+}
+.navbar-nav .nav-link {
+    color: black;
     padding: 8px 12px;
+    margin: 0 5px;
     border-radius: 5px;
 }
-nav a:hover {
+.navbar-nav .nav-link:hover {
     background-color: #555;
     color: #f4f4f4;
 }
@@ -46,10 +49,21 @@ nav a:hover {
     border-radius: 8px;
     text-align: center;
 }
+.carousel-img {
+    max-width: 50%;
+    margin: 0 auto;
+}
+.carousel-control-prev-icon {
+    background-color: black;
+  }
+  .carousel-control-next-icon {
+    background-color: black;
+  } 
 .index img {
     max-width: 100%;
     border-radius: 8px;
 }
+
 figure {
     margin: 20px 0;
     text-align: center;
@@ -58,7 +72,6 @@ figure img {
     max-width: 100%;
     border-radius: 8px;
 }
-
 figcaption {
     margin-top: 10px;
     font-style: italic;
@@ -70,11 +83,14 @@ form {
     border: 1px solid #ddd;
     max-width: 500px;
     margin: 20px auto;
+    
 }
+
 form label {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 18px;
 }
+
 form input[type="text"],
 form input[type="email"],
 form select,
@@ -85,6 +101,7 @@ form textarea {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
 form input[type="submit"] {
     background-color: #333;
     color: white;
@@ -93,6 +110,7 @@ form input[type="submit"] {
     border-radius: 5px;
     cursor: pointer;
 }
+
 form input[type="submit"]:hover {
     background-color: #555;
 }
@@ -103,7 +121,6 @@ footer p {
     .index {
         max-width: 45%;
     }
-
     nav a {
         display: inline-block;
         margin: 5px 0;
