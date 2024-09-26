@@ -5,18 +5,16 @@ body {
     background-color: #f4f4f4;
     text-align: center;
 }
-
 header, footer {
     background-color: #333;
     color: white;
     padding: 10px 0;
     text-align: center;
 }
-
 h1 {
     margin: 0;
     padding: 10px 0;
-    color: white;
+    color: black;
 }
 nav a {
     color: white;
@@ -26,19 +24,16 @@ nav a {
     border-radius: 5px;
     display: inline-block;
 }
-
 nav a:hover {
     background-color: #555;
     color: white;
 }
-
 .item-section {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 20px;
 }
-
 .item {
     background-color: white;
     padding: 20px;
@@ -47,17 +42,14 @@ nav a:hover {
     margin: 20px;
     max-width: 300px;
 }
-
 .item img {
     max-width: 100%;
     border-radius: 8px;
 }
-
 .item h3 {
     color: #333;
     margin: 15px 0 10px;
 }
-
 .item p {
     color: #666;
 }
