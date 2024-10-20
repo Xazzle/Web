@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechMarket</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand">TechMarket</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="phone.html">Phone</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="laptop.html">Laptop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="headphones.html">Headphones</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="current-time" class="mt-4 text-center"></div>
+    <main class="container mt-5">
+        <section id="home" class="row mb-4">
+            <div class="col-lg-6">
+                <h2>Home Section</h2>
+                <p>Welcome to homepage of our website</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="image1.png" class="img-fluid" alt="Sample Image">
+            </div>
+        </section>
+        <section id="about" class="row mb-4">
+            <div class="col-lg-4">
+                <h3>Phone</h3>
+                <p>A mobile device that combines cellular and smartphone functions, allowing for calls, texts, and various applications.</p>
+            </div>
+            <div class="col-lg-4">
+                <h3>Laptop</h3>
+                <p>A portable computer designed for mobile use, equipped with a keyboard, screen, and battery for computing on the go.</p>
+            </div>
+            <div class="col-lg-4">
+                <h3>Headphones</h3>
+                <p>Audio devices worn on or over the ears to listen to sound without disturbing others, available in various styles and types.</p>
+            </div>
+        </section>
+        <section id="carouselSection" class="mb-4">
+                <h2>Our Products</h2>
+            <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="iphone15promax.jpg" class="d-block w-100 carousel-img" alt="Phone">
+            </div>
+            <div class="carousel-item">
+                <img src="MacBook Pro 14.png" class="d-block w-100 carousel-img" alt="Laptop">
+            </div>
+            <div class="carousel-item">
+                <img src="AirPodsMax.png" class="d-block w-100 carousel-img" alt="Headphones">
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev"> 
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+        </section>
+        <section id="contact" class="mt-5">
+            <h2>Contact Us</h2>
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label for="name" class="form-label">Name:</label>
+                    <input type="text" class="form-control" id="name" name="name">
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email">
+                </div>
+                <div class="col-12">
+                    <label for="service" class="form-label">Select a device:</label>
+                    <select class="form-select" id="service" name="service">
+                        <option value="web">Phone</option>
+                        <option value="design">Laptop</option>
+                        <option value="seo">Headphones</option>
+                    </select>
+                </div>
+                <div class="col-12">
+                    <label for="message" class="form-label">Your Message:</label>
+                    <textarea class="form-control" id="message" name="message" rows="4"></textarea>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </section>
+        <section id="auth" class="container mt-5">
+    <h2>User Authentication</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <h3>Login</h3>
+            <input type="text" id="login-username" class="form-control mb-2" placeholder="Username">
+            <input type="password" id="login-password" class="form-control mb-2" placeholder="Password">
+            <button class="btn btn-primary" onclick="login(document.getElementById('login-username').value, document.getElementById('login-password').value)">Login</button>
+        </div>
+        <div class="col-md-6">
+            <h3>Register</h3>
+            <input type="text" id="register-username" class="form-control mb-2" placeholder="Username">
+            <input type="password" id="register-password" class="form-control mb-2" placeholder="Password">
+            <button class="btn btn-secondary" onclick="register(document.getElementById('register-username').value, document.getElementById('register-password').value)">Register</button>
+        </div>
+    </div>
+</section>
+<section id="faq" class="container mt-5">
+    <h2>FAQ</h2>
+    <div class="faq-item">
+        <h4>What is TechMarket?</h4>
+        <p class="answer d-none">TechMarket is an online store for the latest tech gadgets.</p>
+    </div>
+    <div class="faq-item">
+        <h4>What products do you sell?</h4>
+        <p class="answer d-none">We sell phones, laptops, and headphones from top brands.</p>
+    </div>
+</section>
+<script src="script.js"></script> 
+    </main>
+    <footer class="text-center mt-4">
+        <p>&copy; 2024 TechMarket. All rights reserved.</p>
+        <p>Created by Amantay Sanzhar and Sultanov Daiyar</p>
+        <p>Date: September 10, 2024</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

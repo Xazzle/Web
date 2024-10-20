@@ -1,0 +1,232 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+.dark-theme {
+    background-color: #121212;
+    color: white;
+}
+.dark-theme header, .dark-theme footer {
+    background-color: #222;
+
+}
+.dark-theme .navbar {
+    background-color: #222;
+}
+.dark-theme .navbar-nav .nav-link {
+    color: white;
+    color : black;
+}
+.dark-theme form {
+    background-color: #222;
+    color: white;
+}
+h1 {
+    color: white;
+    text-align: left;
+    font-size: 2.5rem;
+}
+h2, h3 {
+    color: #333;
+}
+.dark-theme h2, .dark-theme h3 {
+    color: #ddd;
+}
+p {
+    font-size: 1.25rem;
+}
+.navbar {
+    background-color: #333;
+}
+.navbar-nav .nav-link {
+    color: black;
+    padding: 8px 12px;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+.navbar-nav .nav-link:hover {
+    background-color: #555;
+    color: #f4f4f4;
+}
+.index-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+}
+.index {
+    flex: 1;
+    max-width: 30%;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+}
+.index img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+.carousel-img {
+    max-width: 50%;
+    margin: 0 auto;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: black;
+}
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.faq-item:hover {
+    background-color: #f9f9f9;
+}
+.answer {
+    display: none;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+#auth {
+    margin-top: 40px;
+}
+#auth h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+#auth input[type="text"], 
+#auth input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#auth button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#auth button.btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+#auth button.btn-primary:hover {
+    background-color: #0056b3;
+}
+#auth button.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+#auth button.btn-secondary:hover {
+    background-color: #495057;
+}
+#popup-subscription {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    z-index: 1000;
+    display: none;
+}
+#popup-subscription button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#popup-subscription button:hover {
+    background-color: #0056b3;
+}
+#current-time {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    max-width: 500px;
+    margin: 20px auto;
+}
+form label {
+    display: block;
+    margin-bottom: 18px;
+}
+form input[type="text"], 
+form input[type="email"], 
+form select, 
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+form input[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+form input[type="submit"]:hover {
+    background-color: #555;
+}
+footer p {
+    margin: 5px 0;
+}
+.d-none {
+    display: none;
+}
+@media (max-width: 768px) {
+    .index {
+        max-width: 45%;
+    }
+    nav a {
+        display: inline-block;
+        margin: 5px 0;
+    }
+    h1 {
+        font-size: 1.8em;
+    }
+    h2 {
+        font-size: 1.4em;
+    }
+}
+@media (max-width: 480px) {
+    .index {
+        max-width: 100%;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+    form {
+        padding: 15px;
+    }
+}
