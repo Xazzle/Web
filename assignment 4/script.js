@@ -32,7 +32,12 @@ const faqItems = document.querySelectorAll('.faq-item');
 faqItems.forEach(item => {
     item.addEventListener('click', () => {
         const answer = item.querySelector('.answer');
-        answer.classList.toggle('d-none');
+         answer.classList.toggle('d-none');
+        if (answer.style.display === 'none' || !answer.style.display) {
+            answer.style.display = 'block';
+        } else {
+            answer.style.display = 'none';
+        }
     });
 });
 function showPopup() {
