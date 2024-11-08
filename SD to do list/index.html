@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Project - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script defer src="auth.js"></script>
+    <style>
+        #navbarNavlist {
+            display: none;
+        }
+        #loginLink, #registerLink {
+            display: block;
+        }
+        #exitLink {
+            display: none;
+        }
+        #userName {
+            color: white;
+            margin-right: 10px;
+            align-self: center;
+        }
+    </style>
+</head>
+
+<body>
+<header class="fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">To-Do List Project</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navbarNavlist">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tasks.html">My Tasks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="completed.html">Completed Tasks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex" id="userSection">
+                    <span id="userName"></span>
+                    <a class="btn btn-dark me-2" href="#" data-bs-toggle="modal" data-bs-target="#loginModal" id="loginLink">Login</a>
+                    <a class="btn btn-dark" href="#" data-bs-toggle="modal" data-bs-target="#registerModal" id="registerLink">Register</a>
+                    <a class="btn btn-danger ms-2" href="#" id="exitLink" style="display: none;">Exit</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<main>
+    <section class="bg-success text-light text-center p-5" style="margin-top: 56px;">
+        <div class="container">
+            <h2 class="display-4">Organize Your Life with Ease</h2>
+            <p class="lead">Manage your tasks efficiently with our intuitive to-do list.</p>
+            <a href="tasks.html" class="btn btn-light btn-lg">Get Started</a>
+        </div>
+    </section>
+    <section class="container my-5">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h1>This project will help you manage your daily tasks efficiently.</h1>
+                <p>A To-Do List is a simple yet powerful tool used to organize tasks, prioritize responsibilities, and
+                    increase productivity. By listing out what needs to be accomplished, it provides a clear overview of your
+                    tasks, helping you stay focused and track progress throughout the day or week.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="images/todolist.jpg" alt="To-Do List" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light py-5">
+        <div class="container">
+            <h1>Benefits of Using a To-Do List</h1>
+            <p>Organizes Tasks Clearly: Writing down tasks in one place prevents the mental clutter of trying to remember
+                everything. You can visually see what needs to be done, allowing for better planning. A well-managed list
+                brings peace of mind, as you can systematically address each task.</p>
+        </div>
+    </section>
+
+    <section class="bg-secondary text-light text-center py-5">
+        <div class="container">
+            <h2>About Project</h2>
+            <p>More information about the To-Do List project</p>
+            <a href="about.html" class="btn btn-outline-light btn-lg">Go ahead!</a>
+        </div>
+    </section>
+
+    <section class="bg-black py-4">
+        <div class="container text-center">
+            <figure class="blockquote">
+                <img src="images/quote.jpg" alt="Inspirational Quote Image" class="img-fluid mb-3">
+                <figcaption class="blockquote-footer text-light">
+                    "Failure is a good option. If you are not failing, you are not trying hard enough."
+                    <br><cite>– Elon Musk</cite>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+    <!-- Login -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label for="loginUsername" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="loginUsername" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="loginPassword" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                        <p id="loginError" class="text-danger mt-2"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--- Register -->
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registerModalLabel">Register</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="registerForm">
+                        <div class="mb-3">
+                            <label for="registerUsername" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="registerUsername" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="registerPassword" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Register</button>
+                        <p id="registerError" class="text-danger mt-2"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="bg-dark text-light text-center py-4">
+    <p>Created by: Sanzhar & Daniyar</p>
+    <div class="d-flex justify-content-center">
+        <a href="https://www.facebook.com/profile.php?id=100009554220032" class="me-3 text-light" target="_blank">
+            <img src="https://img.icons8.com/color/48/000000/facebook-new.png" alt="Facebook Icon" width="30">
+        </a>
+        <a href="https://www.instagram.com/" class="me-3 text-light" target="_blank">
+            <img src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="Instagram Icon" width="30">
+        </a>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script>// Пример кода для сохранения пользователя при успешном входе
+function loginUser(username) {
+    sessionStorage.setItem('loggedInUser', username);
+    window.location.href = "tasks.html"; // Перенаправление на страницу задач
+}
+</script>
+
+</body>
+</html>
